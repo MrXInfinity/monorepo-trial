@@ -1,3 +1,5 @@
+"use client";
+
 import { ReactNode, useState } from "react";
 import { EachSnackbarType } from "../types";
 import { SnackbarContext } from "./SnackbarContext";

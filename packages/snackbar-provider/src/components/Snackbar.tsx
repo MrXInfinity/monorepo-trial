@@ -1,3 +1,5 @@
+"use client";
+
 import { Alert, Snackbar as MuiSnackbar } from "@mui/material";
 import { EachSnackbarType } from "../types";
 
