@@ -7,7 +7,7 @@ export function useSnackbar() {
 
   const enqueueSnackbar = useCallback(
     (msg: string, option: Omit<EachSnackbarType, "message" | "id">) => {
-      const key = msg + `${snackBarOptions.length}`;
+      const key = Date.now().toString();
       setSnackBarOptions([
         ...snackBarOptions,
         { message: msg, id: key, ...option },
